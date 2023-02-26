@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/img/jp_Icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="js/scroll.js"></script>
+
+
+    <title>João Paulo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <main>
+        <section class="pages primary-page" id="pagInicio">
+            <div class="boxPerfil">
+                <img class='perfil' src="img/perfil.jpg" width="50px" height="50px"/>
+                <h1 class="nome">João Paulo</h1>
+                <p>Desenvolvedor Junior e Acadêmico de bacharelado em sistemas de informações</p>
+                <div class="social">
+                    <a href="https://github.com/Joao-Paulo-Silva" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-462572250/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <a class="verMais" href="#sobre">
+                    <i class="bi bi-chevron-compact-down"></i>
+                    <p>Mais Informações</p>
+                </a>   
+            </div>
+            <div class="imagens-Inicio">
+                <object class="imgTop" data="img/topobackGround.svg" type=""></object>
+            </div>
+        </section>
+        <div class="menu" id="menuID">
+            <ul>
+                <li><a href="#sobre"><i class="bi bi-person-bounding-box"></i></a></li>
+                <li><a href="#projetos"><i class="bi bi-boxes"></i></a></li>
+                <li><a href="#habilidades"><i class="bi bi-terminal"></i></a></li>
+            </ul>
+
+
+        </div>
+        <section class="pages secudary-page" id="sobre">
+            <div class="boxJanela">
+                <object class="imgQuarto" data="img/sala.svg" type=""></object>
+            </div>
+            <div class="sobre">
+                <div class="textSobre">
+                    <img class='perfilSobre' src="img/perfil.jpg" width="50px" height="50px"/>
+                    <h2 class="tituloSobre">Olá, eu sou João Paulo!</h2>
+                    <ul class="lista">
+                        <li class="listaLI">Sou estudante de bacharelado em sistemas de informações no <abbr title="Instituto Federal do Norte de Minas Gerais">IFNMG</abbr> <i>campus</i> Salinas, atualmente estou no 8° período do curso.</li>
+                        <li class="listaLI">No curso tive diversas experiências com algumas linguagens de programação e framework.</li>
+                        <li class="listaLI">Faço parte da diretoria da empresa júnior <a href="https://sifsoft.com.br/" target="_blank">SIFSoft</a> em Salinas - MG como diretor de gestão de pessoas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="pages third-page" id="projetos">
+            <h1 class="titulosProjeto">Projetos</h1>
+            <h3 class="subTitulos">Alguns projetos desenvolvidos para web</h3>
+            <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+            <img class="imgCard" src="img/sifsoft.png" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+            <img class="imgCard" src="img/nim.png" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+            <img class="imgCard" src="img/forca.png" />
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+        </section>
+        <section class="pages fourth-page" id="habilidades">
+            
+        </section>
+    </main>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+        const swiper = new Swiper('.swiper', {
+        effect: 'cards',
+        cardsEffect: {
+            slideShadows: false,
+        },
+        autoplay: {
+        delay: 5000,
+        },
+            // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });</script>
+</body>
+</html>

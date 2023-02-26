@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.pages{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    min-height: 600px;
+}
+
+.primary-page{
+    background-color: #2A143A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.imagens-Inicio{
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;   
+}
+
+.imgTop{
+    min-width: 100%;
+    min-height: 50vh;
+    height: 70%;
+    width: auto;
+    transition: all 0.5s;
+}
+.boxPerfil{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    margin-bottom: -3em;
+}
+.perfil{
+    border-radius: 50%;
+    width: auto;
+    height: 15em;
+    min-height: 0;
+    margin-bottom: 1em;
+    border: 0.6em solid #04aa6d;
+
+}
+
+.nome{
+    font-size: 3em;
+}
+
+.boxPerfil p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.7em;
+}
+
+
+@media (max-height: 628px) {
+    .imgTop{
+        margin-top: -2%;
+    }
+    .perfil{
+        height: 10em;
+    }
+    .verMais{
+        margin-top: -2em;
+    }
+}
+
+.social{
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
+    margin: 1.5em;
+    
+}
+.social i{
+    color:  #fafafa;
+    font-size: 2em;
+}
+.social i:hover{
+    cursor: pointer;
+    color:  #e25f71;
+}
+
+.verMais{
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    animation: flutua2 6s ease-in-out infinite;
+}
+
+.verMais:hover{
+    cursor: pointer;
+    color:  #e25f71;
+}
+.verMais i{
+    font-size: 6em;
+}
+.verMais p{
+    font-family: Roboto;
+    font-size: 0.8em;
+    margin-top: -2.5em;
+}
+
+@keyframes flutua{
+	0%,100%{
+		text-shadow:0 5px 20px 0 rgba(0,0,0,.6);
+		transform:translatey(0)
+	}
+	50%{
+		text-shadow:0 25px 20px 0 rgba(0,0,0,.2);
+		transform:translatey(-0.1em)
+	}
+}
+
+@keyframes flutua2{
+	0%,100%{
+        text-shadow:0 5px 20px 0 rgba(0,0,0,.6);
+		transform:translatey(0)
+	}
+	50%{
+        text-shadow:0 25px 20px 0 rgba(0,0,0,.2);
+		transform:translatey(-2vh)
+	}
+}
+
+.secudary-page{
+    background-color: #252525;
+}
+
+.boxJanela{
+    position: absolute;
+    margin-top: 50vh;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.imgQuarto{
+    position: absolute;
+    right: 0;
+    height:100%;
+}
+
+#menuID{
+    visibility: hidden;
+}
+
+
+.menu{
+    position: fixed;
+    z-index: 4;
+    background-color: #2A143A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    width: 2em;
+    height: 10em;
+    border-radius: 15px;
+    top: calc(50vh - (5em));
+    margin-left: 1em;
+    box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.486);
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+    color: #f4f4f4;
+}
+
+.menu ul li a{
+    color: #f4f4f4;
+}
+
+.menu ul li a:hover{
+    cursor: pointer;
+    color: #e25f71;
+}
+
+.third-page{
+    background-color: #252525;
+}
+.fourth-page{
+    background-color: #252525;
+}
+.sobre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textSobre{
+    z-index: 4;
+    color: #fafafa;
+    width: 60%;
+    max-width: 40em;
+    margin-top: -5em;
+    background-color: #2e2d2daf;
+    border-radius: 15px;
+    padding: 1.5em;
+    text-align: center;
+}
+.perfilSobre{
+    width: auto;
+    height: 5em;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    border: 0.25em solid #43546bc0;
+    
+}
+.lista{
+    list-style: none;   
+    text-align: justify;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+.listaLI a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.tituloSobre{
+    font-size: 2em;
+    margin-bottom: 0.6em;
+    text-align: center;
+    color: #fa8072;
+}
+
+
+#projetos{
+    height: 100vh;
+    width: 100%;
+}
+
+.titulosProjeto{
+    padding-top: 5vh;
+    font-size: 10vh;
+    text-align: center;
+    width: 100%;
+    color: #f4f4f4;
+}
+.subTitulos{
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    color: #f4f4f4;
+}
+
+.swiper {
+    width: 70%;
+    height: 60%;
+}
+.swiper-wrapper{
+    width: 90%;
+}
+
+.imgCard{
+    border-radius: 1em;
+}
