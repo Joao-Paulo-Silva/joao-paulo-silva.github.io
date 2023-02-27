@@ -7,6 +7,7 @@
 html{
     scroll-behavior: smooth;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
@@ -175,11 +176,11 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5em;
-    width: 2em;
-    height: 10em;
+    text-align: center;
+    width: 2.3em;
+    height: 12em;
     border-radius: 15px;
-    top: calc(50vh - (5em));
+    top: calc(50vh - (12em));
     margin-left: 1em;
     box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.486);
 }
@@ -187,6 +188,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1.1em;
 }
 
 .menu ul li{
