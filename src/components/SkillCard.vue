@@ -37,12 +37,14 @@ export default {
     .icon{
       margin-top: 0.5rem;
       font-size: 3rem;
+      color: var(--vt-c-text-dark-2);
     }
 
     .title{
       font-size: 1.2rem;
       padding-bottom: 0.5rem;
       border-bottom: 0.2rem solid #34d399;
+      color: var(--vt-c-text-dark-2);
     }
 
 </style>

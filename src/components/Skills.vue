@@ -43,6 +43,7 @@
   margin: 1rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--vt-c-text-dark-2);
 }
 
 .subtitle{

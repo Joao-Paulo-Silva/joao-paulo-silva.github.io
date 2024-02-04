@@ -132,6 +132,7 @@
   text-align: justify;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  color: var(--vt-c-text-dark-2);
 }
 
 @media (max-width: 760px) {

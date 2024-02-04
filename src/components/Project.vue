@@ -36,6 +36,7 @@ import {projects} from '../constants/projects.ts'
   font-size: 3rem;
   font-weight: 900;
   margin: 1rem;
+  color: var(--vt-c-text-dark-2);
 }
 
 .container-project {

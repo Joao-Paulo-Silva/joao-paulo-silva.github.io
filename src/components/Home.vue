@@ -98,6 +98,7 @@
   font-size: 1.5rem;
   max-width: 900px;
   line-height: 1.3;
+  color: var(--vt-c-text-dark-2);
 }
 
 .social-media-container {
