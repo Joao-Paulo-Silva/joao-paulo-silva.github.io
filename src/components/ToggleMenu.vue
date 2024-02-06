@@ -75,6 +75,7 @@ export default defineComponent({
   padding: 1rem;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .menu-icon {
