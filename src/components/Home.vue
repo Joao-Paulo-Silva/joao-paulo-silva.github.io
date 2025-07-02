@@ -8,7 +8,7 @@
       alt=""
     />
     <div class="container">
-      <img src="../assets/imgs/profile.png" alt="" class="img-profile" />
+      <img src="../assets/imgs/profile.webp" alt="" class="img-profile" />
       <h1 class="title">João Paulo</h1>
       <h3 class="subtitle">
         Desenvolvedor Júnior e Acadêmico de Bacharelado em Sistemas de
@@ -79,6 +79,7 @@
 
 .img-profile {
   height: 15rem;
+  min-width: 15rem;
   width: auto;
   max-width: 80vw;
   border: 0.6rem solid #04aa6d;

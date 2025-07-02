@@ -10,7 +10,7 @@
     <div class="content-about">
       <div class="content-profile">
         <img
-          src="../assets/imgs/profile-about.png"
+          src="../assets/imgs/profile-about.webp"
           alt=""
           class="img-profile"
         />
