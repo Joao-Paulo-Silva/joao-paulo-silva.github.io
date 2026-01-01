@@ -5,15 +5,17 @@ import Project from "../components/Project.vue";
 import ToggleMenu from "../components/ToggleMenu.vue";
 import Skills from "../components/Skills.vue";
 import Footer from "../components/Footer.vue";
+import Experience from "@/components/Experience.vue";
 </script>
 
 <template>
   <main>
-    <ToggleMenu />
-    <Home />
-    <About />
-    <Project />
-    <Skills />
+    <ToggleMenu/>
+    <Home/>
+    <About/>
+    <Experience/>
+    <Project/>
+    <Skills/>
     <Footer/>
   </main>
 </template>

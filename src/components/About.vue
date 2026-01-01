@@ -14,25 +14,23 @@
           alt=""
           class="img-profile"
         />
-        <div class="name-profile">
-          <h1 class="name">João Paulo</h1>
+        <div class="profile-info">
+          <h2 class="name">João Paulo</h2>
+          <span class="role">Full Stack Developer</span>
         </div>
       </div>
       <div class="content-text">
         <h2 class="title-text">
-          Sou um estudante universitário no IFNMG - Salinas na área de Sistemas
-          de Informação, minha jornada profissional é focado em desenvolvimento.
+          Bacharel em Sistemas de Informação pelo IFNMG -Campus Salinas.
         </h2>
         <p class="text">
-          Em 2019, iniciei minha graduação em Sistemas de Informação e me
-          envolvi ativamente na empresa júnior SIFSoft, onde contribuí para o
-          desenvolvimento do front-end e back-end do site usando Django, Docker,
-          HTML e CSS.
+          Desenvolvedor full stack com experiência em Django, React TypeScript,
+          Docker, HTML, CSS e Bootstrap. Atualmente atuo com PHP e Vue.js.
         </p>
         <p class="text">
-          Em projetos comerciais da SIFSoft, atuei como desenvolvedor front-end
-          com React TS, e tenho experiência em diversas linguagens e frameworks,
-          incluindo Django, React.js e Bootstrap.
+          Possuo experiência no desenvolvimento e manutenção de bibliotecas
+          em Python, incluindo a biblioteca AISP, baseada em Sistemas
+          Imunológicos Artificiais, um ramo da Computação Natural.
         </p>
       </div>
     </div>
@@ -46,7 +44,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100vw;
   background-color: #252525;
 }
@@ -76,40 +74,58 @@
   align-items: center;
   overflow: hidden;
   border-radius: 30px 30px 5px 5px;
-  height: auto;
-  width: auto;
-  max-width: 350px;
+  height: 100%;
+  width: 100%;
+  max-width: 18rem;
   min-width: 200px;
   min-height: 250px;
-  max-height: 50vh;
+  max-height: 60dvh;
   background-color: #7f7f7f;
   box-shadow: 0px 5px 10px #62047344;
   margin: auto;
+  &:hover {
+    .img-profile {
+      transform: scale(1.2);
+    }
+    .profile-info {
+      transform: translateY(calc(-50% + 0.5rem));
+    }
+  }
 }
 
 .img-profile {
-  width: 15rem;
-  height: auto;
-  max-width: 350px;
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-}
-
-.name-profile {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
+  width: 100%;
   height: 100%;
-  color: #2a143a;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.name {
-  margin-bottom: 0.5rem;
-  font-weight: 900;
-  font-size: 1.5rem;
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  color: var(--text-primary);
+  backdrop-filter: blur(1.5rem);
+  transition: transform 0.5s ease;
+  margin-top: -0.5rem;
+  .name {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .role {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
 }
+
+
 
 .content-text {
   width: 100%;
@@ -132,7 +148,7 @@
   text-align: justify;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
 }
 
 @media (max-width: 760px) {
