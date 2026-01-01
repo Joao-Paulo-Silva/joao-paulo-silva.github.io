@@ -43,10 +43,11 @@ export default defineComponent({
       </button>
       <transition name="fade">
         <div v-if="isOpen" class="menu" @click.self="closeMenu">
-          <a href="#" class="item-menu">Inicio.</a>
-          <a href="#about" class="item-menu">Sobre.</a>
-          <a href="#project" class="item-menu">Projetos.</a>
-          <a href="#skills" class="item-menu">Habilidades.</a>
+          <a href="#" class="item-menu">Inicio</a>
+          <a href="#about" class="item-menu">Sobre</a>
+          <a href="#experience" class="item-menu">Experiência</a>
+          <a href="#project" class="item-menu">Projetos</a>
+          <a href="#skills" class="item-menu">Habilidades</a>
         </div>
       </transition>
     </div>

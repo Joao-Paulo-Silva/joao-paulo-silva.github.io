@@ -1,6 +1,4 @@
 <script lang="ts">
-import { VueElement } from 'vue';
-
 export default {
   name: "SkillCard",
   props: {

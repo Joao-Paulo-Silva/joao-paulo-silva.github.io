@@ -5,6 +5,8 @@
   --color-border: rgba(255, 255, 255, 0.1);
 
   --color-primary: #f54d64;
+  --color-secondary: #04aa6d;
+  --color-primary-glow: rgb(245, 77, 99, 0.5);
   --text-primary: #ffffff;
   --text-secondary: rgba(235, 235, 235, 0.64);
 
