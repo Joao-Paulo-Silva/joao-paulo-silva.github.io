@@ -52,15 +52,15 @@ export default defineComponent({
     </div>
   </template>
 
-<style>
+<style lang="scss">
 .content-menu {
   display: flex;
   flex-direction: column;
   align-items: end;
   position: fixed;
   z-index: 20;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .fade-enter-active,
@@ -71,40 +71,64 @@ export default defineComponent({
 .fade-leave-to {
   opacity: 0;
 }
-.menu-toggle {
-  padding: 1rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--bg-glass);
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  backdrop-filter: blur(0.8rem);
+  &:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--text-primary);
+    transform: rotate(90deg);
+
+    .menu-icon {
+      color: var(--text-primary);
+    }
+
+  }
+}
 .menu-icon {
   font-size: 1.8rem;
   color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 .menu {
-  padding: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  background-color: var(--vt-c-divider-dark-1);
-  border-radius: 5px;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  min-width: 10rem;
+  background-color: var(--bg-glass);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(0.8rem);
+  box-shadow: 0 4px 6px var(--color-shadow);
 }
 
 .item-menu {
+  display: flex;
   text-decoration: none;
   color: var(--text-secondary);
   font-size: 1.2rem;
-  margin-bottom: 0.2rem;
   font-weight: 600;
-  display: flex;
-}
-
-.item-menu:hover {
-  color: #f54d64;
-  z-index: 11;
+  transition: all 0.2s ease;
+  border-left: 2px solid transparent;
+  &:hover {
+    padding-left: 0.5rem;
+    color: var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+  }
 }
 </style>

@@ -4,8 +4,11 @@
 
   --color-border: rgba(255, 255, 255, 0.1);
 
+  --color-primary: #f54d64;
   --text-primary: #ffffff;
-  --text-secondary: rgba(235, 235, 235, 0.64);  
+  --text-secondary: rgba(235, 235, 235, 0.64);
+
+  --color-shadow: rgba(0, 0, 0, 0.1);
 
   --section-gap: 160px;
 }
