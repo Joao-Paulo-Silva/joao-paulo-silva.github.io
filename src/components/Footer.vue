@@ -41,7 +41,7 @@
 .title{
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--vt-c-text-dark-1);
+    color: var(--text-primary);
 }
 
 .itens{
@@ -56,7 +56,7 @@
 
 .itens a{
     text-decoration: none;
-    color: var(--vt-c-text-dark-2);
+    color: var(--text-secondary);
     margin-bottom: 0.2rem;
 }
 

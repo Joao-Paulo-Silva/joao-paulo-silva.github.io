@@ -80,7 +80,7 @@ export default defineComponent({
 
 .menu-icon {
   font-size: 1.8rem;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
 }
 
 .menu {
@@ -96,7 +96,7 @@ export default defineComponent({
 
 .item-menu {
   text-decoration: none;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
   font-weight: 600;

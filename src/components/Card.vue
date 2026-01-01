@@ -30,7 +30,7 @@ export default {
 <style scoped>
 .link-card{
   text-decoration: none;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
   height: auto;
   min-height: 350px;
   min-width: 260px;

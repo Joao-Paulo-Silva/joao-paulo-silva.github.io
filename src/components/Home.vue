@@ -99,7 +99,7 @@
   font-size: 1.5rem;
   max-width: 900px;
   line-height: 1.3;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
 }
 
 .social-media-container {
@@ -112,7 +112,7 @@
 }
 .social-link {
   text-decoration: none;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
 }
 .social-media-icon {
   margin: 1rem;
@@ -146,7 +146,7 @@
   justify-content: center;
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--vt-c-text-dark-2);
+  color: var(--text-secondary);
   margin-top: 0.8rem;
   animation: floating 8s ease-in-out infinite;
 }
