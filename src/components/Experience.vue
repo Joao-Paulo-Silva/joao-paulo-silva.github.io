@@ -194,4 +194,27 @@
             }
         }
     }
+    
+@media (max-width: 650px) {
+    .timeline {
+        &::after {
+            left: 1.1rem;
+        }
+
+        &__item {
+            width: 100%;
+            &::after {
+                left: 0.5rem;
+            }
+
+            &.right {
+                left: 0;
+                &::after {
+                    margin-left: -0.6rem;
+                    left: 1.1rem;
+                }
+            }
+        }
+    }
+}
 </style>
